@@ -20,9 +20,9 @@ const SignInScreen = () => {
     }
   };
 
-  const signIn = (e) => {
-    e.preventDefault();
-  };
+  // const signIn = (e) => {
+  //   e.preventDefault();
+  // };
   return (
     <div className='signupScreen'>
       <form>
@@ -44,7 +44,7 @@ const SignInScreen = () => {
         <button
           type='submit'
           onClick={(e) => {
-            signIn();
+            // signIn();
             register(e);
           }}
         >
