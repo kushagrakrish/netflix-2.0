@@ -1,13 +1,7 @@
 import React, { useState } from "react";
 import "./SignInScreen.css";
-import { useRef } from "react";
 import { auth } from "../Firebase";
-import {
-  getAuth,
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-} from "firebase/auth";
-import { async } from "@firebase/util";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 
 const SignInScreen = () => {
   const [registerEmail, setRegisterEmail] = useState("");
@@ -47,7 +41,13 @@ const SignInScreen = () => {
           type='password'
           placeholder='Password'
         />
-        <button type='submit' onClick={(e) => register(e)}>
+        <button
+          type='submit'
+          onClick={(e) => {
+            // signIn();
+            register(e);
+          }}
+        >
           Sign In
         </button>
         <h4>
