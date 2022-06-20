@@ -44,7 +44,7 @@ const SignInScreen = () => {
         <button
           type='submit'
           onClick={(e) => {
-            // signIn();
+            signIn();
             register(e);
           }}
         >
