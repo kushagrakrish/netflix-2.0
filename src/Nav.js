@@ -7,7 +7,7 @@ const Nav = () => {
   const navigate = useNavigate();
 
   const transitionNavBar = () => {
-    if (window.screenY > 100) {
+    if (window.scrollY > 10) {
       handleShow(true);
     } else {
       handleShow(false);
